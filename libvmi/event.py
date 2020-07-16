@@ -166,6 +166,7 @@ class MemEvent(Event):
         d['gptw'] = bool(self._cffi_event.mem_event.gptw)
         d['gla_valid'] = bool(self._cffi_event.mem_event.gla_valid)
         d['gla'] = hex(self._cffi_event.mem_event.gla)
+        d['gfn'] = hex(self._cffi_event.mem_event.gfn)
         d['offset'] = hex(self._cffi_event.mem_event.offset)
         return d
 
